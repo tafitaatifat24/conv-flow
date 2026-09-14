@@ -1,0 +1,40 @@
+[project]
+name = "conv-flow"
+version = "0.1.0"
+description = "This is an workflow automation that integrate LLM for reasonig. It automates Conversation to CRM flows and assist user to keep tracking conversations stages with the help of LLM. Important decisions always require human review"
+readme = "README.md"
+authors = [
+    { name = "tafitaatifat24", email = "tafitaatifat@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.104.0",
+    "uvicorn[standard]>=0.24.0",
+    "sqlalchemy>=2.0.0",
+    "alembic>=1.13.0",
+    "langchain>=0.1.0",
+    "langgraph>=0.0.40",
+    "langchain-openai>=0.0.8",
+    "langchain-anthropic>=0.1.0",
+    "langchain-google-genai>=1.0.0",
+    "pydantic>=2.0.0",
+    "pydantic-settings>=2.0.0",
+    "python-dotenv>=1.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-asyncio>=0.21.0",
+    "pytest-cov>=4.1.0",
+    "black>=23.0.0",
+    "ruff>=0.1.0",
+    "mypy>=1.5.0",
+]
+
+[project.scripts]
+conv-flow = "conv_flow:main"
+
+[build-system]
+requires = ["uv_build>=0.12.13,<0.13.0"]
+build-backend = "uv_build"
