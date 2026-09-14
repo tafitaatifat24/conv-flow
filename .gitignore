@@ -1,16 +1,3 @@
-<<<<<<< HEAD
-# Python-generated files
-__pycache__/
-*.py[oc]
-build/
-dist/
-wheels/
-*.egg-info
-
-# Virtual environments
-.venv
-.env
-=======
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
@@ -229,4 +216,15 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
->>>>>>> e6da268f08dbbd7c8fa013579a24ef3ff642f8d0
+
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+.env
